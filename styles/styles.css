@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* local style  */
+
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}  
+
+main > section{
+margin-top: 130px;
+}
+/* color based */
+
+.dark-1{
+    color: rgba(19, 19, 19, 1);
+}
+
+.dark-2{
+    color: #424242;
+}
+
+.dark-3{
+  color: rgba(114, 114, 114, 1) ;  
+}
+
+.text-color{
+    color: rgba(255, 144, 14, 1);
+}
+/* nav style */
+.display-flex{
+    display: flex;
+}
+.nav-items{
+    text-decoration: none;
+}
+.brand{
+    font-weight: 700px;
+    font-size: 3rem;
+}
+.items{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navber{
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navber, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+/* banner style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.teams{
+    align-items: center;
+}
+
+.teams-image-contener{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#title-1{
+    font-weight: 500;
+}
+
+.scetion-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* features-section-style */
+.features{
+    gap: 146px;
+}
+#features-section-title{
+    border-left: 5px solid  rgba(255, 144, 14, 1);
+    padding-left: 20px;
+
+}
+.features-card .features-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+.features-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+
+#badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#badge-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* some facts style */
+.facts-card{
+    border: 1px solid rgba(255, 144, 14, 1) ;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.facts-descripsion{
+    max-width: 540px;
+}
+
+.features-architect img{
+    width: 100%;
+}
+
+/* sponspors-style */
+
+.sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponspors-companys{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponspors-companys img{
+    filter: grayscale(100%);
+}
+ /* footer style */
+
+ footer{
+    margin-top: 130px;
+    justify-content: center;
+    text-align: center;   
+ }
+
+.footer-text{
+    width: 1440;
+    height: 100;
+    font-size: 20px;
+    
+}
+/* responsive media quary */
+
+@media screen and (max-width:576px) {
+    .navber, .nav-link,
+    .teams,
+    .features
+    {
+        flex-direction: column;
+    }
+   .teams-image-contener,
+   .facts-container,
+   .sponspors-companys{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .our-features{
+    margin-left: 20px;
+   }
+   .facts-container{
+    justify-items: center;
+    gap: 24px;
+   }
+    .sponspors-companys{
+        justify-items: center;
+        gap: 50px;
+    }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+      
+    }
+    .footer{
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+
+    }
+}
